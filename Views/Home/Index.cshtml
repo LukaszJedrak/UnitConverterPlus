@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <form asp-controller="Home" asp-action="ConvertNumbers" method="post">
+        <div>
+            <h1 id="title">Unit Converter Plus</h1>
+        </div>
+
+        <div id="container">
+            <div class="row">
+                <div class="col-xs-*">
+                    <h2 class="main">Enter values to convert</h2>
+                    <p>Use Space for multiple values</p>
+                </div>
+
+                <div class="col-xs-*">
+                    <input class="main" id="text" name="text" rows="15" cols="80" />
+                </div>
+
+                <div class="col-xs-*">
+                    <input class="main" type="submit" name="action" value="Yards to meters" />
+                </div>
+
+                <div class="col-xs-*">
+                    <input class="main" type="submit" name="action" value="Meters to yards" />
+                </div>
+
+                <div class="col-xs-*">
+                    <input class="main" type="submit" name="action" value="Inches to centimeters" />
+                </div>
+
+                <div class="col-xs-*">
+                    <input class="main" type="submit" name="action" value="Centimeters to inches" />
+                </div>
+
+                <div class="col-xs-*">
+                    <input class="main" type="submit" name="action" value="Miles to kilometers" />
+                </div>
+
+                <div class="col-xs-*">
+                    <input class="main" type="submit" name="action" value="Kilometers to miles" />
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer id="footer">
+            <p>Unit Converter Plus &copy; 2018</p>
+        </footer>
+
+    </form>
+
+</body>
